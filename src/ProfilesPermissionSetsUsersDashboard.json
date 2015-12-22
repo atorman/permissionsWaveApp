@@ -1,0 +1,985 @@
+{
+    "label": "Users, Profiles, and Permission Sets",
+    "description": "Compare Users, Profiles, and Permission Sets",
+    "state": {
+        "steps": {
+            "SystemModstamp_Year_SystemModstamp_Month_SystemModstamp_Day_16": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        [
+                            "SystemModstamp_Year",
+                            "SystemModstamp_Month",
+                            "SystemModstamp_Day"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "time"
+                }
+            },
+            "AssigneeId_Name_8": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "AssigneeId.Name"
+                    ],
+                    "order": [
+                        [
+                            -1,
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "CountUsers": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "USER_ID"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "LoginWithUsers"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "all_13": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "filters": [
+                        [
+                            "IsOwnedByProfile",
+                            [
+                                "false"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSet"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "all_14": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "filters": [
+                        [
+                            "IsOwnedByProfile",
+                            [
+                                "true"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSet"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "AssigneeId_Name_PermissionSetId_PermissionsApiEnabled_17": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "AssigneeId.Name",
+                        "PermissionSetId.PermissionsApiEnabled"
+                    ],
+                    "order": [
+                        [
+                            -1,
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "stackhbar"
+                }
+            },
+            "AssigneeId_Name_2": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "AssigneeId.Name"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "SystemModstamp_Year_SystemModstamp_Month_SystemModstamp_Day_7": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        [
+                            "SystemModstamp_Year",
+                            "SystemModstamp_Month",
+                            "SystemModstamp_Day"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "PermissionSetId_UserLicenseId_Name_12": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "PermissionSetId.UserLicenseId.Name"
+                    ],
+                    "order": [
+                        [
+                            -1,
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "lens_6": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "values": [
+                        "AssigneeId.Name",
+                        "AssigneeId.ProfileId.Name",
+                        "AssigneeId.ProfileId.UserLicenseId.Name",
+                        "AssigneeId.UserRoleId.Name",
+                        "PermissionSetId.Name",
+                        "PermissionSetId.IsOwnedByProfile"
+                    ]
+                },
+                "selectMode": "single",
+                "type": "grain",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "valuestable"
+                }
+            },
+            "lens_15": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "values": [
+                        "Name",
+                        "ProfileId.Name",
+                        "UserLicenseId.Name",
+                        "PermissionsAuthorApex",
+                        "PermissionsModifyAllData",
+                        "PermissionsViewAllData",
+                        "PermissionsCustomizeApplication",
+                        "PermissionsViewEncryptedData",
+                        "PermissionsManageUsers"
+                    ],
+                    "order": [
+                        [
+                            "PermissionsAuthorApex",
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "grain",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSet"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "valuestable"
+                }
+            },
+            "all_3": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "AssigneeId_UserRoleId_Name_11": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "AssigneeId.UserRoleId.Name"
+                    ],
+                    "order": [
+                        [
+                            -1,
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "PermissionSetId_PermissionsModifyAllData_4": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "PermissionSetId.PermissionsModifyAllData"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "PermissionSetId_PermissionsCustomizeApplication_5": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "PermissionSetId.PermissionsCustomizeApplication"
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "PermissionSetId_Name_9": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "PermissionSetId.Name"
+                    ],
+                    "order": [
+                        [
+                            -1,
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            },
+            "AssigneeId_ProfileId_Name_10": {
+                "isFacet": true,
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "AssigneeId.ProfileId.Name"
+                    ],
+                    "order": [
+                        [
+                            -1,
+                            {
+                                "ascending": false
+                            }
+                        ]
+                    ]
+                },
+                "selectMode": "single",
+                "type": "aggregate",
+                "useGlobal": true,
+                "start": null,
+                "datasets": [
+                    {
+                        "name": "PermissionSetAssignment2"
+                    }
+                ],
+                "visualizationParameters": {
+                    "visualizationType": "hbar"
+                }
+            }
+        },
+        "widgets": {
+            "text_KPI": {
+                "type": "text",
+                "position": {
+                    "zIndex": 12,
+                    "x": 240,
+                    "y": 50
+                },
+                "parameters": {
+                    "text": "KPI",
+                    "textColor": "rgb(22, 50, 92)",
+                    "textAlignment": "left"
+                }
+            },
+            "box_KPI": {
+                "type": "box",
+                "position": {
+                    "zIndex": 5,
+                    "x": 240,
+                    "y": 30,
+                    "w": 1090,
+                    "h": 90
+                },
+                "parameters": {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                    "borderColor": "rgba(137, 162, 186, 0.75)"
+                }
+            },
+            "valuestable_1": {
+                "type": "valuestable",
+                "position": {
+                    "zIndex": 17,
+                    "x": 260,
+                    "y": 230,
+                    "w": 1050,
+                    "h": 240
+                },
+                "parameters": {
+                    "step": "lens_6",
+                    "selectModeOverride": "single"
+                }
+            },
+            "box_Background": {
+                "type": "box",
+                "position": {
+                    "zIndex": 1,
+                    "x": 0,
+                    "y": 0,
+                    "w": 1400,
+                    "h": 1900
+                },
+                "parameters": {
+                    "backgroundColor": "rgb(242, 246, 250)",
+                    "borderColor": "rgba(137, 162, 186, 0.75)"
+                }
+            },
+            "valuestable_2": {
+                "type": "valuestable",
+                "position": {
+                    "zIndex": 20,
+                    "x": 260,
+                    "y": 590,
+                    "w": 1050,
+                    "h": 260
+                },
+                "parameters": {
+                    "step": "lens_15",
+                    "selectModeOverride": "single"
+                }
+            },
+            "text_DailyTransactionCount": {
+                "type": "text",
+                "position": {
+                    "zIndex": 7,
+                    "x": 260,
+                    "y": 160
+                },
+                "parameters": {
+                    "text": "Assignments by user",
+                    "textColor": "rgb(22, 50, 92)",
+                    "textAlignment": "left"
+                }
+            },
+            "number_7": {
+                "type": "number",
+                "position": {
+                    "zIndex": 19,
+                    "x": 1140,
+                    "y": 40,
+                    "w": 130
+                },
+                "parameters": {
+                    "step": "all_14",
+                    "measureField": "count",
+                    "title": "# Permission Sets",
+                    "textColor": "rgb(22, 50, 92)",
+                    "fontSize": 26,
+                    "textAlignment": "center",
+                    "compact": true
+                }
+            },
+            "number_6": {
+                "type": "number",
+                "position": {
+                    "zIndex": 18,
+                    "x": 990,
+                    "y": 40,
+                    "w": 130
+                },
+                "parameters": {
+                    "step": "all_13",
+                    "measureField": "count",
+                    "title": "# Profiles",
+                    "textColor": "rgb(22, 50, 92)",
+                    "fontSize": 26,
+                    "textAlignment": "center",
+                    "compact": true
+                }
+            },
+            "box_5": {
+                "type": "box",
+                "position": {
+                    "zIndex": 17,
+                    "x": 240,
+                    "y": 900,
+                    "w": 1090,
+                    "h": 350
+                },
+                "parameters": {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                    "borderColor": "rgba(137, 162, 186, 0.75)"
+                }
+            },
+            "text_5": {
+                "type": "text",
+                "position": {
+                    "zIndex": 18,
+                    "x": 260,
+                    "y": 920
+                },
+                "parameters": {
+                    "text": "Profiles and permission sets by assignment date",
+                    "textColor": "rgb(22, 50, 92)"
+                }
+            },
+            "box_6": {
+                "type": "box",
+                "position": {
+                    "zIndex": 19,
+                    "x": 240,
+                    "y": 1280,
+                    "w": 1090,
+                    "h": 350
+                },
+                "parameters": {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                    "borderColor": "rgba(137, 162, 186, 0.75)"
+                }
+            },
+            "chart_2": {
+                "type": "chart",
+                "position": {
+                    "zIndex": 22,
+                    "x": 260,
+                    "y": 1350,
+                    "w": 1070,
+                    "h": 260
+                },
+                "parameters": {
+                    "step": "AssigneeId_Name_PermissionSetId_PermissionsApiEnabled_17",
+                    "legend": true,
+                    "visualizationType": "stackhbar"
+                }
+            },
+            "text_6": {
+                "type": "text",
+                "position": {
+                    "zIndex": 20,
+                    "x": 260,
+                    "y": 1300
+                },
+                "parameters": {
+                    "text": "Users with API access",
+                    "textColor": "rgb(22, 50, 92)"
+                }
+            },
+            "chart_1": {
+                "type": "chart",
+                "position": {
+                    "zIndex": 21,
+                    "x": 260,
+                    "y": 970,
+                    "w": 1050,
+                    "h": 260
+                },
+                "parameters": {
+                    "step": "SystemModstamp_Year_SystemModstamp_Month_SystemModstamp_Day_16",
+                    "visualizationType": "time"
+                }
+            },
+            "box_1": {
+                "type": "box",
+                "position": {
+                    "zIndex": 4,
+                    "x": 240,
+                    "y": 140,
+                    "w": 1090,
+                    "h": 350
+                },
+                "parameters": {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                    "borderColor": "rgba(137, 162, 186, 0.75)"
+                }
+            },
+            "box_2": {
+                "type": "box",
+                "position": {
+                    "zIndex": 8,
+                    "x": 240,
+                    "y": 520,
+                    "w": 1090,
+                    "h": 350
+                },
+                "parameters": {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                    "borderColor": "rgba(137, 162, 186, 0.75)"
+                }
+            },
+            "text_DailyTransactionSpeed": {
+                "type": "text",
+                "position": {
+                    "zIndex": 9,
+                    "x": 260,
+                    "y": 540
+                },
+                "parameters": {
+                    "text": "Profiles and permission sets by permission",
+                    "textColor": "rgb(22, 50, 92)",
+                    "textAlignment": "left"
+                }
+            },
+            "dimfilter_3": {
+                "type": "listselector",
+                "position": {
+                    "zIndex": 100002,
+                    "x": 30,
+                    "y": 290,
+                    "w": 190,
+                    "h": 50
+                },
+                "parameters": {
+                    "step": "PermissionSetId_Name_9",
+                    "title": "Permission Set Names",
+                    "expanded": false,
+                    "measureField": "count",
+                    "compact": true
+                }
+            },
+            "dimfilter_4": {
+                "type": "listselector",
+                "position": {
+                    "zIndex": 100003,
+                    "x": 30,
+                    "y": 360,
+                    "w": 190,
+                    "h": 50
+                },
+                "parameters": {
+                    "step": "AssigneeId_ProfileId_Name_10",
+                    "title": "Profile Names",
+                    "expanded": false,
+                    "measureField": "count",
+                    "compact": true
+                }
+            },
+            "dimfilter_5": {
+                "type": "listselector",
+                "position": {
+                    "zIndex": 100004,
+                    "x": 30,
+                    "y": 430,
+                    "w": 190,
+                    "h": 50
+                },
+                "parameters": {
+                    "step": "AssigneeId_UserRoleId_Name_11",
+                    "title": "Role Names",
+                    "expanded": false,
+                    "measureField": "count",
+                    "compact": true
+                }
+            },
+            "dimfilter_6": {
+                "type": "listselector",
+                "position": {
+                    "zIndex": 100005,
+                    "x": 30,
+                    "y": 500,
+                    "w": 190,
+                    "h": 50
+                },
+                "parameters": {
+                    "step": "PermissionSetId_UserLicenseId_Name_12",
+                    "title": "License Names",
+                    "expanded": false,
+                    "measureField": "count",
+                    "compact": true
+                }
+            },
+            "dimfilter_1": {
+                "type": "listselector",
+                "position": {
+                    "zIndex": 100000,
+                    "x": 30,
+                    "y": 150,
+                    "w": 190,
+                    "h": 50
+                },
+                "parameters": {
+                    "step": "SystemModstamp_Year_SystemModstamp_Month_SystemModstamp_Day_7",
+                    "title": "Date Assigned",
+                    "expanded": false,
+                    "instant": false,
+                    "measureField": "count"
+                }
+            },
+            "dimfilter_2": {
+                "type": "listselector",
+                "position": {
+                    "zIndex": 100001,
+                    "x": 30,
+                    "y": 220,
+                    "w": 190,
+                    "h": 50
+                },
+                "parameters": {
+                    "step": "AssigneeId_Name_8",
+                    "title": "Users",
+                    "expanded": false,
+                    "measureField": "count",
+                    "compact": true
+                }
+            },
+            "number_5": {
+                "type": "number",
+                "position": {
+                    "zIndex": 16,
+                    "x": 840,
+                    "y": 40,
+                    "w": 130
+                },
+                "parameters": {
+                    "step": "PermissionSetId_PermissionsCustomizeApplication_5",
+                    "measureField": "unique_PermissionSetId.PermissionsCustomizeApplication",
+                    "title": "# Customize App",
+                    "textColor": "rgb(22, 50, 92)",
+                    "fontSize": 26,
+                    "textAlignment": "center",
+                    "compact": true
+                }
+            },
+            "number_4": {
+                "type": "number",
+                "position": {
+                    "zIndex": 15,
+                    "x": 690,
+                    "y": 40,
+                    "w": 130
+                },
+                "parameters": {
+                    "step": "PermissionSetId_PermissionsModifyAllData_4",
+                    "measureField": "unique_PermissionSetId.PermissionsModifyAllData",
+                    "title": "# Modify All Data",
+                    "textColor": "rgb(22, 50, 92)",
+                    "fontSize": 26,
+                    "textAlignment": "center",
+                    "compact": true
+                }
+            },
+            "text_Title": {
+                "type": "text",
+                "position": {
+                    "zIndex": 3,
+                    "x": 30,
+                    "y": 30
+                },
+                "parameters": {
+                    "text": "Compare\nUsers\nProfiles\n& Permsets",
+                    "textColor": "rgb(22, 50, 92)"
+                }
+            },
+            "number_3": {
+                "type": "number",
+                "position": {
+                    "zIndex": 14,
+                    "x": 540,
+                    "y": 40,
+                    "w": 130
+                },
+                "parameters": {
+                    "step": "all_3",
+                    "measureField": "count",
+                    "title": "# Assignments",
+                    "textColor": "rgb(22, 50, 92)",
+                    "fontSize": 26,
+                    "textAlignment": "center"
+                }
+            },
+            "number_2": {
+                "type": "number",
+                "position": {
+                    "zIndex": 13,
+                    "x": 390,
+                    "y": 40,
+                    "w": 130
+                },
+                "parameters": {
+                    "step": "AssigneeId_Name_2",
+                    "measureField": "unique_AssigneeId.Name",
+                    "title": "# of Users",
+                    "textColor": "rgb(22, 50, 92)",
+                    "fontSize": 26,
+                    "textAlignment": "center",
+                    "compact": true
+                }
+            },
+            "number_CountUsers": {
+                "type": "number",
+                "position": {
+                    "zIndex": 0,
+                    "x": 40,
+                    "y": 40,
+                    "w": 300
+                },
+                "parameters": {
+                    "step": "CountUsers",
+                    "measureField": "unique_USER_ID"
+                }
+            }
+        },
+        "layouts": []
+    },
+    "datasets": [
+        {
+            "id": "0FbB00000008cShKAI",
+            "name": "LoginWithUsers"
+        },
+        {
+            "id": "0FbB00000008gziKAA",
+            "name": "PermissionSet"
+        },
+        {
+            "id": "0FbB00000008gwtKAA",
+            "name": "PermissionSetAssignment2"
+        }
+    ]
+}
